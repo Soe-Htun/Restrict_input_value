@@ -4,7 +4,7 @@
     <div class="login">
      <h1>Restrict Input value</h1><br>
       <input id="name" v-model="name" placeholder="EmailAddress" /><br>
-      <input type="password" id="password" v-model="password" @input="password=password.replace(/[^a-z,A-Z]/g, '')" placeholder="Password(Except 0-9)"/>
+      <input type="password" id="password" v-model="password" @input="password=password.replace(/[^a-z,A-Z]/g, '')" placeholder="Password(A-Z only)"/>
       <br />
       <span @click="show_hide()">
         <i v-if="hide" class="far fa-eye-slash"></i>

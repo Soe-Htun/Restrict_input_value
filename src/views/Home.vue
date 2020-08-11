@@ -3,6 +3,7 @@
    
     <div class="login">
      <h1>Restrict Input value</h1><br>
+      <!-- <input id="name" v-model="name" @input="name=name.replace(/[0-9]/, '')" placeholder="EmailAddress" /><br> -->
       <input id="name" v-model="name" placeholder="EmailAddress" /><br>
       <input type="password" id="password" v-model="password" @input="password=password.replace(/[^a-z,A-Z]/g, '')" placeholder="Password(A-Z only)"/>
       <br />
@@ -78,10 +79,11 @@ h1{
 #name {
   text-indent: 10px;
   width: 220px;
-   height: 40px;
+  height: 40px;
   border-radius: 10px;
   border: 1px solid grey;
   outline: none;
+  font-size: 20px;
 }
 #password {
   outline: none;
@@ -91,6 +93,7 @@ h1{
   height: 40px;
   border-radius: 10px;
   border: 1px solid grey;
+  font-size: 20px;
 }
 ::placeholder{
   color: black;

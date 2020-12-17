@@ -13,6 +13,7 @@
       </span>
       <el-button id="btn" type="primary" @click="login">Login(Ent)</el-button>
       <el-button type="primary" @click="Clear()" id="sign">Clear(↑)</el-button>
+      
     </div>
 
     <!-- <div class="dialog" v-if="dialog==1">
@@ -46,13 +47,12 @@ export default {
         pass.type = "password";
         this.show=false;
         this.hide=true;
-      }
+      } 
     },
     Clear(){
       this.name='';
       this.password=''
     }
-
 
   },
   created(){
@@ -115,7 +115,8 @@ h1{
 }
 i {
   position: absolute;
-  top: 42%;
-  left: 79%;
+  top: 63%;
+  left: 78%;
 }
 </style>
+ 
